@@ -1,6 +1,3 @@
-// this is the style you want to emulate.
-// This is the canonical layout file for the Quantum project. If you want to add another keyboard,
-
 #include QMK_KEYBOARD_H
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
@@ -37,7 +34,7 @@ enum ferris_tap_dances {
 
     // Shift modificator
     #define KC_LRSH RSFT_T(KC_L)
-    #define KC_SLSH LSFT_T(KC_S)
+    #define KC_SSFT LSFT_T(KC_S)
 
     // Ctrl modificator
     #define KC_KCTL RCTL_T(KC_SCLN)
@@ -52,9 +49,9 @@ enum ferris_tap_dances {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWERTY] = LAYOUT( /* QWERTY */
     KC_QESC, KC_W,    KC_E,    KC_R,    KC_T,            KC_Y,    KC_U,  KC_I,    KC_O,   KC_P,
-    KC_ATAB, KC_SLSH, KC_D,    KC_FALT, KC_GGUI,         KC_HGUI,    KC_JALT,  KC_KCTL,    KC_LRSH,   KC_SCLE,
-    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,            KC_N,    KC_M,  KC_COMM, KC_DOT, KC_SLRS,
-                                    KC_CLGV, KC_SPM2, KC_BSM1, KC_GUTA
+    KC_ATAB, KC_SSFT, KC_D,    KC_FALT, KC_GGUI,         KC_HGUI,    KC_JALT,  KC_KCTL,    KC_LRSH,   KC_SCLE,
+    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,            KC_N,    KC_M,  KC_COMM, KC_DOT, KC_SLSH,
+                                    KC_CLGV, KC_SPM2, KC_BSM1, KC_BSLS
   ),
 
   [_LOWER] = LAYOUT( /* LOWER */
