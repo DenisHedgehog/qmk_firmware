@@ -16,12 +16,6 @@
 
 #pragma once
 
-
-/* USB Device descriptor parameter */
-#define VENDOR_ID       0x3434
-#define MANUFACTURER    Keychron
-#define PRODUCT         Keychron Q1
-
 /* key matrix size */
 #define MATRIX_ROWS 6
 #define MATRIX_COLS 15
@@ -42,9 +36,6 @@
 
 /* Disable DIP switch in matrix data */
 #define MATRIX_MASKED
-
-/* NKRO */
-#define FORCE_NKRO
 
 /* Disable RGB lighting when PC is in suspend */
 #define RGB_DISABLE_WHEN_USB_SUSPENDED
@@ -97,3 +88,6 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
+
+// #define RGB_MATRIX_KEYPRESSES
+// #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
