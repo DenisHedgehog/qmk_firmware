@@ -13,8 +13,7 @@ enum ferris_layers {
 
 enum ferris_tap_dances {
   TD_Q_ESC,
-  TD_A_TAB,
-  TD_SEMICOLON_ENTER
+  TD_A_TAB
 };
 
 // Tap dance key code definitions
