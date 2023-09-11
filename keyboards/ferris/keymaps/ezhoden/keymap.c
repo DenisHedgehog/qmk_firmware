@@ -36,8 +36,8 @@ enum ferris_tap_dances {
     #define KC_SSFT LSFT_T(KC_S)
 
     // Ctrl modificator
-    #define KC_KCTL RCTL_T(KC_SCLN)
-    #define KC_CLGV CTL_T(KC_GRV)
+    #define KC_KCTL RCTL_T(KC_K)
+    #define KC_CLGV CTL_T(KC_TAB)
 
     // Alt modificator
     #define KC_FALT ALT_T(KC_F)
@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_RAISE] = LAYOUT( /* RAISE */
     KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,           KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
     KC_TAB,  KC_TRNS, KC_TRNS, KC_TRNS, KC_F11,         KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_PIPE,
-    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_F12,         KC_UNDS, KC_PLUS, KC_TRNS, KC_TRNS, KC_TRNS,
+    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_F12,         KC_UNDS, KC_PLUS, KC_TRNS, KC_TRNS, KC_GRV,
                                     KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
   )
 };
